@@ -10887,3 +10887,13 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+.hidden
+{
+  opacity: 0;
+}
+
+.visible
+{
+  opacity: 0;
+}
