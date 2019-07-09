@@ -10948,3 +10948,23 @@ form .row:first-child .floating-label-form-group {
   font-family:"Poppins",sans-serif !important;
   font-weight: 100 !important;
 }
+
+.parallax-wrapper {
+  overflow-y: hidden;
+}
+
+.parallax {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -5%;
+}
