@@ -10740,7 +10740,7 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   border-bottom-width: 5px;
 
-  border-bottom-color: red;
+  border-bottom-color: transparent;
 }
 
 #mainNav .navbar-toggler {
