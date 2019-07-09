@@ -19,12 +19,13 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700,700i&display=swap" rel="stylesheet">
 
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/tooltip.css" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -54,7 +55,14 @@
   </nav>
   
   <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
+  <header class="masthead bg-primary text-white text-center"     
+    data-aos="fade-down"
+    data-aos-offset="200"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
@@ -91,9 +99,9 @@
   </header>
 
   <!-- Portfolio Section -->
-
-  <section class="page-section portfolio zoomIn" id="portfolio">
-    <div class="container">
+  <div data-aos="flip-left">
+  <section class="page-section portfolio zoomIn" id="portfolio" >
+    <div class="container" >
       
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
@@ -187,9 +195,10 @@
       <!-- /.row -->
 
     </div>
-  </section>
-
+    </section>
+    </div>
   <!-- About Section -->
+  <div data-aos="flip-right">
   <section class="page-section bg-primary text-white mb-0 zoomIn" id="about">
     <div class="container">
 
@@ -243,8 +252,9 @@
     </div>
     <br/> <br/>
   </section>
-
+  </div>
   <!-- Contact Section -->
+  <div data-aos="zoom-in">
   <section class="page-section zoomIn" id="contact">
     <div class="container">
 
@@ -294,7 +304,7 @@
     </div>
     <br/> <br/> <br/> <br/> <br/>
   </footer>
-
+  </div>
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
@@ -543,7 +553,10 @@
       </div>
     </div>
   </div>-->
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
