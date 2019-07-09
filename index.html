@@ -23,6 +23,7 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
+  <link href="css/tooltip.css" rel="stylesheet">
 
 </head>
 
@@ -75,15 +76,15 @@
       <br/><br/>
       <div className="text-center fadeIn">
       <span style="font-size: 30px;margin: 10px;">
-      <a href="https://www.linkedin.com/in/john-mark-adriano-b96103a5/" style="color: white" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/john-mark-adriano-b96103a5/" class="social-link" target="_blank" data-tooltip="Linkedin"><i class="fab fa-linkedin-in"></i></a>
       </span>
 
       <span style="font-size: 30px;margin: 10px;">
-      <a href="https://github.com/ArkmJohn" style="color: white" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/ArkmJohn" class="social-link" target="_blank" data-tooltip="Github"><i class="fab fa-github"></i></a>
       </span>
 
       <span style="font-size: 30px;margin: 10px;">
-      <a href="https://bitbucket.org/%7Bcfdf3d7c-cc84-4943-8e65-14ecbd5bc342%7D/" style="color: white" target="_blank"><i class="fab fa-bitbucket"></i></a>
+      <a href="https://bitbucket.org/%7Bcfdf3d7c-cc84-4943-8e65-14ecbd5bc342%7D/" class="social-link" target="_blank" data-tooltip="Bitbucket"><i class="fab fa-bitbucket"></i></a>
       </span>
       </div>
     </div>
@@ -110,8 +111,8 @@
       <div class="row">
 
         <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+        <div class="col-md-6 col-lg-4" data-tooltip="The Wanderer">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -122,8 +123,8 @@
         </div>
 
         <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+        <div class="col-md-6 col-lg-4" data-tooltip="Not For The Faint of Heart">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -134,8 +135,8 @@
         </div>
 
         <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+        <div class="col-md-6 col-lg-4" data-tooltip="Party Kingdoms">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -146,8 +147,8 @@
         </div>
 
         <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+        <div class="col-md-6 col-lg-4" data-tooltip="Catch The Sheep">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -158,8 +159,8 @@
         </div>
 
         <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+        <div class="col-md-6 col-lg-4" data-tooltip="VR Demo">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -170,8 +171,8 @@
         </div>
 
         <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+        <div class="col-md-6 col-lg-4" data-tooltip="Extra">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6" >
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
@@ -213,14 +214,21 @@
       </div>
       <br/> <br/> 
         <!-- Skills Section -->
-      <h3 class="text-center bg-primary text-uppercase text-white">Skills</h3>
+      <h3 class="text-center bg-primary text-uppercase">Skills</h3>
       <br /> <br />
-      <div class="row text-center" style="color: white;">
-        <div class="col">
+      <div class="row text-center">
+      <div class="col" data-tooltip="Adobe"><img src="img/skills/adobe.png" class = "skills-icon"alt="Adobe" ></div>
+      <div class="col" data-tooltip="C#"><img src="img/skills/c-sharp.png" class="skills-icon" alt="C-Sharp"></div>
+      <div class="col" data-tooltip="HTML"><img src="img/skills/html.png" class="skills-icon" alt="HTML"></div>
+      <div class="col" data-tooltip="Java"><img src="img/skills/java.png" class="skills-icon" alt="Java"></div>
+      <div class="col" data-tooltip="React"><img src="img/skills/react.png" class="skills-icon" alt="React JS"></div>
+      <div class="col" data-tooltip="Unity"><img src="img/skills/unity.png" class="skills-icon" alt="Unity"></div>
+      <div class="col" data-tooltip="Unreal"><img src="img/skills/unreal.png" class="skills-icon" alt="Unreal"></div>
+      <div class="col" data-tooltip="Wordpress"><img src="img/skills/wordpress.png" class="skills-icon" alt="Wordpress"></div>
+
+        <!--<span style="font-size: 48px; margin: 10px;"><i class="fab fa-galactic-republic"></i></span>
         <span style="font-size: 48px; margin: 10px;"><i class="fab fa-galactic-republic"></i></span>
-        <span style="font-size: 48px; margin: 10px;"><i class="fab fa-galactic-republic"></i></span>
-        <span style="font-size: 48px; margin: 10px;"><i class="fab fa-galactic-republic"></i></span>
-        </div>
+        <span style="font-size: 48px; margin: 10px;"><i class="fab fa-galactic-republic"></i></span>-->
       </div>
       <br /> <br />
       <!-- About Section Button -->

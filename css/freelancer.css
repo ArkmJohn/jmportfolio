@@ -10651,6 +10651,33 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
 }
 
+.social-link
+{
+  color: white;
+}
+
+.social-link:hover
+{
+  color: #808080;
+  border-color: #9C2626;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.skills-icon
+{
+  width: 58px;
+  height: 58px;
+  padding: 10px;
+  background-color:transparent;
+}
+
+.skills-icon:hover
+{
+  background-color:#9C2626;
+
+}
+
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;
