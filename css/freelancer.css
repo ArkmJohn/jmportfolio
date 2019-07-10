@@ -10721,6 +10721,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 1rem;
   font-family: "Poppins","Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  width: 100% !important;
 }
 
 #mainNav .navbar-brand {
@@ -10761,7 +10762,7 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
 	background-color: transparent!important;
-
+    
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -10781,7 +10782,7 @@ a.text-dark:hover, a.text-dark:focus {
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-	background-color: black !important;
+	  background-color: black !important;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
@@ -10974,3 +10975,4 @@ form .row:first-child .floating-label-form-group {
   height: 100%;
   margin-top: -5%;
 }
+
