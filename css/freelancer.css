@@ -10710,6 +10710,12 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 3.1rem;
 }
 
+.scroll-to-top a:hover
+{
+  background-color: rgba(69, 76, 83, 0.5);
+
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
