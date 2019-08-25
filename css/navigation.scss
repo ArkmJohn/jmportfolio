@@ -1,0 +1,170 @@
+@import './variables.scss';
+burger {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    transform: translate(-50%, -20%);
+    z-index: 3;
+}
+
+.nav-1 {
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-1 span {
+    background-color: #FFF;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+}
+
+.nav-1 span:nth-child(1) {
+    width: 100%;
+    height: 4px;
+    display: block;
+    top: 0px;
+    left: 0px;
+}
+
+.nav-1 span:nth-child(2) {
+    width: 100%;
+    height: 4px;
+    display: block;
+    top: 10px;
+    left: 10px;
+}
+
+.nav-1 span:nth-child(3) {
+    width: 100%;
+    height: 4px;
+    display: block;
+    top: 20px;
+    left: 0px;
+}
+
+.nav-1:not(.open):hover span:nth-child(1) {
+    width: 100%;
+    height: 4px;
+    display: block;
+    top: -5px;
+    left: 0px;
+}
+
+.nav-1:not(.open):hover span:nth-child(3) {
+    width: 100%;
+    height: 4px;
+    display: block;
+    top: 25px;
+    left: 0px;
+}
+
+.nav-1.open span {
+    background-color: rgba(61, 61, 61, 1);
+}
+
+.nav-1.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+}
+
+.nav-1.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-1.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
+.nav-1 a {
+    color: transparent;
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    transition: all .1s;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    h1 {
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
+
+.nav-1.open a {
+    color: black;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.nav-1.open a:nth-child(4) {
+    right: 200%;
+}
+
+.nav-1.open a:nth-child(5) {
+    right: 600%;
+}
+
+.nav-1.open a:nth-child(6) {
+    right: 1000%;
+}
+
+.nav-1.open a:nth-child(7) {
+    right: 1400%;
+}
+
+.menu-bar {
+    position: fixed;
+    z-index: 2;
+    margin: 0;
+    background-color: #FFF;
+    width: 20vw;
+    height: 105vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    right: -500%;
+    transition: all .2s ease-in-out;
+    a {
+        margin-top: 10%;
+        width: 100%;
+        height: 10vh;
+        text-decoration: none;
+        color: black;
+        transition: all .2s ease-in-out;
+        h1 {
+            transition: all .2s ease-in-out;
+        }
+    }
+    a:hover {
+        color: rgba(61, 61, 61, 0.6);
+        text-decoration: underline;
+        h1 {
+            padding-left: 1em;
+        }
+    }
+}
+
+.menu-bar.open {
+    right: 5%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .menu-bar {
+        top: -5%;
+        width: 100vw;
+        a {
+            padding: 0 1em;
+            h1 {
+                padding: 0 1em;
+            }
+        }
+    }
+    .menu-bar.open {
+        right: 0;
+    }
+}

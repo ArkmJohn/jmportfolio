@@ -1,0 +1,436 @@
+section {
+  min-width: 80%;
+  min-height: 70vh;
+  padding: 10px 5rem;
+}
+
+section-flex {
+  min-width: 80%;
+  min-height: 70vh;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-left {
+  width: 46%;
+  padding: 0px 2%;
+  float: left;
+  min-height: 70vh;
+}
+
+.section-right {
+  width: 46%;
+  padding: 0px 2%;
+  float: right;
+  min-height: 70vh;
+}
+
+.name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 7em;
+  line-height: 125px;
+}
+
+.titles {
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 6em;
+}
+
+.titles a {
+  font-size: 3em;
+  color: white;
+}
+
+.titles h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.7em;
+}
+
+.social-link {
+  margin-right: 1em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-bottom-color: transparent;
+}
+
+.social-link:hover {
+  border-bottom-style: solid;
+  border-bottom-style: 5px;
+  border-bottom-color: red;
+}
+
+.contact-sub p {
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 2.4em;
+}
+
+.contact-sub div {
+  float: right;
+  -webkit-margin-before: 2.5em;
+          margin-block-start: 2.5em;
+}
+
+.contact-sub div a {
+  font-size: 2.5em;
+  color: white;
+}
+
+.sub p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.7em;
+  -webkit-margin-before: 3em;
+          margin-block-start: 3em;
+  line-height: 200%;
+}
+
+.skills-icon {
+  width: 3.5vw;
+  padding: 2vw 2vw;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.skills-icon:hover {
+  background-color: #b60c0c;
+  border-radius: 5px;
+}
+
+section-flex thumbnail {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+  max-width: 25rem;
+  max-height: 28.5rem;
+  cursor: pointer;
+  background-color: white;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5em;
+  color: #AAA;
+  text-align: center;
+  overflow: hidden;
+}
+
+section-flex thumbnail img {
+  min-height: 100%;
+  max-height: 120%;
+  width: 100%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+section-flex thumbnail p {
+  opacity: 0;
+  padding: 0.5em 1.6em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+section-flex thumbnail:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.see-more-div {
+  display: none;
+}
+
+.resume-button {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  border-radius: 10px;
+  width: 15vw;
+  height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+#modal {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  z-index: -5;
+  cursor: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#modal cover {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal div {
+  min-width: 70%;
+  min-height: 50%;
+  max-height: 90%;
+  max-width: 90%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  z-index: 11;
+}
+
+#modal div .display {
+  min-width: 40%;
+  min-height: 40%;
+  max-width: 50%;
+  max-height: 50%;
+  margin: .5em;
+  border-radius: 5px;
+}
+
+#modal div p {
+  padding: 1em;
+  font-weight: 400;
+}
+
+#modal div h5 {
+  font-weight: 400;
+}
+
+#modal div close {
+  top: 5%;
+  right: 7%;
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+}
+
+#modal div close span {
+  width: 5px;
+  background-color: black;
+  position: absolute;
+  border-radius: 2px;
+  -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+
+#modal div close span:nth-child(1) {
+  width: 20px;
+  height: 4px;
+  left: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+
+#modal div close span:nth-child(2) {
+  width: 20px;
+  height: 4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+  left: 0px;
+}
+
+#modal div close:hover span:nth-child(1) {
+  width: 20px;
+  height: 6px;
+  left: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 15px;
+}
+
+#modal div close:hover span:nth-child(2) {
+  width: 20px;
+  height: 6px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 15px;
+  left: 0px;
+}
+
+#modal.open {
+  opacity: 1;
+  z-index: 10;
+  cursor: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+  .section-left {
+    width: 100%;
+    padding: 0px 2%;
+    min-height: auto;
+  }
+  .section-right {
+    width: 100%;
+    padding: 0px 2%;
+    min-height: auto;
+  }
+  .section-right .titles {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .skills-icon {
+    width: 10vw;
+    padding: 0px 3vw;
+  }
+  .more-thumbnail {
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  .more-thumbnail:not(.open) {
+    opacity: 0;
+    -ms-flex-preferred-size: 25rem;
+        flex-basis: 25rem;
+    max-width: 25rem;
+    max-height: 0rem;
+  }
+  .more-thumbnail:not(.open) p {
+    display: none;
+  }
+  .more-thumbnail.open {
+    opacity: 1;
+    -ms-flex-preferred-size: 25rem;
+        flex-basis: 25rem;
+    max-width: 25rem;
+    max-height: 28.5rem;
+  }
+  .more-thumbnail.open p {
+    display: inline;
+  }
+  .see-more-div {
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    display: block;
+  }
+  .see-more-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    width: 15vw;
+    height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 700;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .see-more-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .see-more-button::after {
+    content: "MORE";
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .see-more-button.open::after {
+    content: "HIDE";
+  }
+  .sub p {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+  section-flex thumbnail p {
+    opacity: 1;
+  }
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 575px) {
+  .titles h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .titles h1 {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=sections.css.map */
